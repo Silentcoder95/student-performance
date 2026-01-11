@@ -1,4 +1,3 @@
-!pip install streamlit
 import streamlit as st
 import joblib
 import numpy as np
@@ -13,4 +12,5 @@ if st.button("Predict Result"): input_data = np.array([[study_hours, attendance]
         st.success("Prediction: PASS")
     else:
         st.error("Prediction: FAIL")
+
 
